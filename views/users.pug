@@ -1,0 +1,9 @@
+extends layout/header.pug
+
+block title
+    title Home
+block content
+    h1 users
+    form(action='/users' method='POST')
+        input(name="user" placeholder="entrez un nom")
+        button(type="input") envoyer

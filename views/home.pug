@@ -1,0 +1,9 @@
+extends layout/header.pug
+
+block title
+    title Home
+block content
+    h1 Homepage
+    for data in users
+        li= data.user
+    // li= user.user ou li #{user.user}
